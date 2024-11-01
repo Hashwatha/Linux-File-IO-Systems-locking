@@ -2,23 +2,14 @@
 Ex07-Linux File-IO Systems-locking
 # AIM:
 To Write a C program that illustrates files copying and locking
-
-# DESIGN STEPS:
-
+## DESIGN STEPS:
 ### Step 1:
-
 Navigate to any Linux environment installed on the system or installed inside a virtual environment like virtual box/vmware or online linux JSLinux (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) or docker.
-
 ### Step 2:
-
 Write the C Program using Linux IO Systems locking
-
 ### Step 3:
-
 Execute the C Program for the desired output. 
-
 # PROGRAM:
-
 ## 1.To Write a C program that illustrates files copying 
 ```
 #include <unistd.h>
@@ -36,7 +27,6 @@ while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
 ```
-
 ## 2.To Write a C program that illustrates files locking
 ```
 #include <fcntl.h>
@@ -78,10 +68,7 @@ return 0;
 }
 ```
 ## OUTPUT
-
 ![image](https://github.com/user-attachments/assets/46431fab-fe63-4a6e-be0d-7fe6b64f9cb9)
-
 ![image](https://github.com/user-attachments/assets/8d6961ac-1b04-45d0-9dd3-3742d118394a)
-
 # RESULT:
 The programs are executed successfully.
